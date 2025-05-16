@@ -1,5 +1,10 @@
 import random
 import sys
+from flask import Flask, render_template, request
+app = Flask(__name__)
+@app.route('/')
+def index():
+    return render_template('start.html')
 
 
 def get_user_choice():
@@ -59,4 +64,4 @@ def main():
             sys.exit()
 
 if __name__ == "__main__":
-    main()
+    app.run()
