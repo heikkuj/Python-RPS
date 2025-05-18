@@ -2,11 +2,30 @@ body {
     background-color: #aad9f3;
 }
 
-.flex {
+.center-text {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
     justify-content: center;
 
     text-align: center;
+}
+
+.center-choice {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+
+    padding-inline: 10vw;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+img {
+    width: 17vw;
+    height: auto;
 }

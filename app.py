@@ -1,10 +1,15 @@
 import random
 import sys
+from lib2to3.btm_utils import reduce_tree
+
 from flask import Flask, render_template, request
 app = Flask(__name__)
 @app.route('/')
-def index():
+def start():
     return render_template('start.html')
+
+def results():
+    return render_template('results.html')
 
 
 def get_user_choice():
