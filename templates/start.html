@@ -7,14 +7,29 @@
     <title>Start</title>
 </head>
 <body>
-    <div class="flex">
+    <div class="center-text">
         <h1>Let's play rock, paper, scissors!</h1>
         <p>What is your weapon of choice?</p>
-        <div class="">
-            <button>Rock</button>
-            <button>Paper</button>
-            <button>Scissors</button>
-        </div>
+    </div>
+    <div class="choice-buttons">
+        <form action="/play" method="post">
+            <button class="rock" type="submit" value="rock" name="choice">
+            <img alt="Line drawing of a closed fist for 'rock'" src="../static/Rock.png">
+            <img alt="Rock" src="../static/Rock-text.png">
+            </button>
+        </form>
+        <form action="/play" method="post">
+            <button class="paper" type="submit" value="paper" name="choice">
+            <img alt="Line drawing of an open hand for 'paper'" src="../static/Paper.png">
+            <img alt="Paper" src="../static/Paper-text.png">
+            </button>
+        </form>
+        <form action="/play" method="post">
+            <button class="scissor" type="submit" value="scissors" name="choice">
+            <img alt="Line drawing of a hand making a scissor gesture" src="../static/Scissor.png">
+            <img alt="Scissors" src="../static/Scissor-text.png">
+            </button>
+        </form>
     </div>
 
 </body>
